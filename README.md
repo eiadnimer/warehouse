@@ -1,0 +1,6 @@
+- descrption about the project buismess
+- java version 17
+- technology stack (spring, postegres, spring data, h2, junit)
+- how to run
+  - `make all`
+  - this will build maven and then run the docker compose file

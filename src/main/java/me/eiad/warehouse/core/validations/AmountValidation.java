@@ -17,7 +17,7 @@ public class AmountValidation implements DealValidation {
             throw new FieldMustNotBeEmpty("Amount must not be empty");
         }
         if (deal.amount().signum() < 0) {
-            throw new AmountIsMinus();
+            throw new AmountIsMinus("Amount is minus");
         }
     }
 }

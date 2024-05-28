@@ -1,10 +1,29 @@
-- descrption about the project buismess
-- java version 17
-- technology stack (spring, postegres, spring data, h2, junit)
-- how to run
+# Bloomberg FX Deals Data Warehouse
+
+## Project Description
+
+This project is part of a scrum team effort to develop a data warehouse for 
+Bloomberg to analyze foreign exchange (FX) deals.
+One of the key customer stories involves accepting deal details and persisting them into a database for further analysis.
+
+## Technologies Used
+
+- **Java 17**
+- **Spring Framework**
+- **PostgreSQL Database**
+- **Spring Data JPA**
+- **H2 Database (for testing)**
+- **JUnit (for testing)**
+
+## How to Run the Project
+
+To build and run the project, use the following command:
+```sh
+make all
   - `make all`
+   ```
   - this will build maven and then run the docker compose file
-- how to use
+## How to Run the Project
   - execute this request
     ```
     curl --location 'http://localhost:8080/deal' \

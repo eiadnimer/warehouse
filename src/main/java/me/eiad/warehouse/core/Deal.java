@@ -2,6 +2,7 @@ package me.eiad.warehouse.core;
 
 
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import me.eiad.warehouse.core.validations.*;
 
 import java.math.BigDecimal;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@Slf4j
 public record Deal(long uniqueId,
                    String fromCurrencyIsoCode,
                    String toCurrencyIsoCode,
@@ -35,6 +37,7 @@ public record Deal(long uniqueId,
         this.dealTimestamp = dealTimestamp;
         this.amount = amount;
         validateDeal();
+        log.info("Deal ready to create with id {}", this.uniqueId);
     }
 
     private void validateDeal() {

@@ -24,7 +24,7 @@ make all
    ```
   - this will build maven and then run the docker compose file
 ## How to Run the Project
-  - execute this request
+  - execute this request to create a new deal:
     ```
     curl --location 'http://localhost:8080/deal' \
     --header 'Content-Type: application/json' \

@@ -1,9 +1,6 @@
 package me.eiad.warehouse;
 
 import me.eiad.warehouse.api.DealDTO;
-import me.eiad.warehouse.core.Deal;
-import me.eiad.warehouse.core.DealMapper;
-import me.eiad.warehouse.repository.SpringDataDealRepository;
 import me.eiad.warehouse.repository.SpringDealRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,13 +29,10 @@ public class DealControllerTest {
     @Autowired
     private TestRestTemplate testRestTemplate;
     private DealDTO dealDTO1;
-    private DealDTO dealDTO2;
 
     @BeforeEach
     void setUp() {
         dealDTO1 = new DealDTO(1, "JOD", "JOD",
-                LocalDate.now(), BigDecimal.ONE);
-        dealDTO2 = new DealDTO(2, "JOD", "JOD",
                 LocalDate.now(), BigDecimal.ONE);
         springDealRepository.deleteAll();
     }

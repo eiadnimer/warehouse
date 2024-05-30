@@ -15,8 +15,10 @@ public class DealServiceTest {
 
     @Test
     public void make_sure_the_deal_was_saved_correctly() {
-        dealsService.saveDeal(new DealDTO(1, "JOD", "JOD", LocalDate.now(), new BigDecimal(2)));
-        dealsService.saveDeal(new DealDTO(2, "JOD", "JOD", LocalDate.now(), new BigDecimal(2)));
+        dealsService.saveDeal(new DealDTO(1, "JOD", "JOD",
+                LocalDate.now(), new BigDecimal(2)));
+        dealsService.saveDeal(new DealDTO(2, "JOD", "JOD",
+                LocalDate.now(), new BigDecimal(2)));
 
         Assertions.assertEquals(2, dealRepository.deals.size());
     }

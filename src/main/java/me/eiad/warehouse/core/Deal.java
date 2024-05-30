@@ -1,7 +1,5 @@
 package me.eiad.warehouse.core;
 
-
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import me.eiad.warehouse.core.validations.*;
 
